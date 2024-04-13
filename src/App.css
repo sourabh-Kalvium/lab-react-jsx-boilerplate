@@ -1,1 +1,16 @@
-/* add your styles here */
+.parent h4{
+    text-align: center;
+}
+
+.main{
+  width: 95%;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 10px;
+  margin: auto;
+
+}
+.elephant{
+    width: 100%;   
+}

@@ -7,7 +7,7 @@ const imageData = ()=>{
       id:1,
       img:elephant
     },
-    {
+    { 
       id:2,
       img:elephant
     },
@@ -25,6 +25,17 @@ const imageData = ()=>{
 
 function App() {
   // code here
+  return (<div className='parent'>
+             <h4>Kalvium gallary</h4>
+              <div className='main'>
+                 {imageData().map((ele)=>{
+                 return <img className='elephant' src=   {ele.img} alt="img" />
+                 })}
+             </div>
+           
+         </div>
+        )
+
 }
 
 export default App;

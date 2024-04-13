@@ -27,4 +27,18 @@ export default class AppClass extends Component{
   }
 
   // code here
+  render(){
+      return(
+        <div className='parent'>
+             <h4>Kalvium gallary</h4>
+              <div className='main'>
+                 {this.imageData().map((ele)=>{
+                 return <img className='elephant' src=   {ele.img} alt="img" />
+                 })}
+             </div>
+           
+         </div>
+      )
+  }
+
 }
